@@ -1,4 +1,60 @@
-$mainColor: #333;
-$fontFamily: Helvetica, Arial, sans-serif;
-$linkColor: #699;
-$bgColor: #f8f8f8;
+@font-face {
+	font-family: 'proxima_nova';
+	src: url('../fonts/mark_simonson_-_proxima_nova_light_0.woff2') format('woff2'),
+		url('../fonts/mark_simonson_-_proxima_nova_light_0.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proxima_nova';
+	src: url('../fonts/mark_simonson_-_proxima_nova_semibold_0.woff2') format('woff2'),
+		url('../fonts/mark_simonson_-_proxima_nova_semibold_0.woff') format('woff');
+	font-weight: normal;
+	font-style: 500;
+}
+
+$proxima: 'proxima_nova' sans-serif;
+$roboto: 'Roboto' sans-serif;
+$transition: all .3s ease-in-out;
+
+.container {
+	max-width: 1160px;
+	padding: 0 10px;
+	margin: auto;
+}
+
+.btn {
+	padding: 14px 25px;
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid transparent;
+	font: 500 14px $proxima;
+	transition: $transition;
+}
+
+.btn--white {
+	border-color: #fff;
+	color: #fff;
+}
+
+.btn--blue {
+	border-color: #7dacc4;
+	background: #7dacc4;
+	color: #fff;
+	&:hover {
+		color:  #7dacc4;
+		background: transparent;
+	}
+}
+
+.btn--tblue {
+	border-color: #7dacc4;
+	color:  #7dacc4;
+	&:hover {
+		background: #7dacc4;
+		color: #fff;
+	}
+}

@@ -1,16 +1,287 @@
 extends _layout
+block vars
+	- var bodyClass = 'home'
 block content
 	main.main-content
-		.sprite-example
-			h2.heading Sprite example
-			i.facebook-logo__icon
-			i.google-plus-logo__icon
-			i.instagram-logo__icon
-			i.twitter-logo__icon
-			i.youtube-logo__icon
-		.author-git
-			h2 Github link
-			a(href="https://github.com/narek-t/gulp-jade-sass" target="_blank") https://github.com/narek-t/gulp-jade-sass
+		.home__heading.cf
+			.container
+				h1.home__title Юридическое и Информационное сопровождение
+				p.home__subtitle Физических и юридических лиц
+				a.btn.btn--white.home__heading--btn(href="#") Оставить заявку
+		section.about
+			.container
+				h2.section__title.bordered__title О КОМПАНИИ
+				p.about__desciption Современный ритм жизни требует быстрого выполнения поставленных перед вами задач. В связи с чем, зачастую, времени на длительные поездки и переговоры, просто не хватает физически. Мы можем предоставить Вам такие информационные услуги дистанционно, а наши адвокаты и юристы готовы представлять ваши интересы,  где это потребуется, что сэкономит вам время, которое вы можете посвятить выполнению своей непосредственной работы. 
+					strong Мы готовы к сотрудничеству и хотим помочь Вам.
+				a.btn.btn--blue(href="#") Юридическая помощь
+				a.btn.btn--tblue(href="#") информационные услуги
+		section.benefits
+			.container
+				ul.benefits__list
+					li
+						.icon-side(style="background-image: url(img/ben1.png)")
+						p.heading Комплексный подход
+					li
+						.icon-side(style="background-image: url(img/ben2.png)")
+						p.heading выработка модели ведения бизнеса
+					li
+						.icon-side(style="background-image: url(img/ben3.png)")
+						p.heading работа на результат
+					li
+						.icon-side(style="background-image: url(img/ben4.png)")
+						p.heading Быстрая помощь
+					li
+						.icon-side(style="background-image: url(img/ben5.png)")
+						p.heading Минимизация потерь от проверок и налогов
+					li
+						.icon-side(style="background-image: url(img/ben6.png)")
+						p.heading информационная поддержка
+					li
+						.icon-side(style="background-image: url(img/ben7.png)")
+						p.heading  поиск активов
+		section.home-blog
+			.container
+				h2.section__title БЛОГ
+				.home-blog__list
+					.home-blog__list--row
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog1.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog2.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog3.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog4.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+					.home-blog__list--row
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog1.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog2.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog3.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog4.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+					.home-blog__list--row
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog1.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog2.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog3.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+						.home-blog__list--item
+							.img-side(style="background-image: url(img/blog4.jpg)")
+							.text-side
+								a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.cf
+									span.date 20.12.2016
+									a.view-more(href="#") Читать далее 
+		section.testimonials
+			.container
+				h2.section__title.bordered__title ОТЗЫВЫ
+				ul.testimonials__list
+					li
+						p.testimonials__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+						p.testimonials__author Иванов Иван Иванович
+						p.testimonials__job Зам. директора «ООО Компания Ко»
+					li
+						p.testimonials__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto. 
+						p.testimonials__author Иванов Иван Иванович
+						p.testimonials__job Зам. директора «ООО Компания Ко»
+					li
+						p.testimonials__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+						p.testimonials__author Иванов Иван Иванович
+						p.testimonials__job Зам. директора «ООО Компания Ко»
+				.testimonials__arrows
+					.testimonials-prev.testimonials-arr
+					.testimonials-next.testimonials-arr
+		section.partners
+			.container
+				h2.section__title.bordered__title ПАРТНЁРЫ
+				p.partners__description Также мы сотрудничаем с юридическими фирмами и коллегиями адвокатов имеющими репутацию профессиональных и надежных компаньонов
+				.partners__list
+					.partners__list-row
+						.partners__list-inner
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+					.partners__list-row
+						.partners__list-inner
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+					.partners__list-row
+						.partners__list-inner
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+							.partners__list-item
+								a(href="#")
+									img(src="img/partner.png", alt="")
+		section.home-contacts
+			.container
+				h2.section__title.bordered__title ОСТАВЬТЕ ЗАЯВКУ
+				p.partners__description Наши специалисты свяжутся с вами в ближайшее время
+				.home-contacts__inner
+					form
+						.inputs-wrap.cf
+							.inputs-item
+								input(type="text" placeholder="Имя")
+							.inputs-item
+								input(type="tel" placeholder="Телефон")
+							.inputs-item
+								input(type="email" placeholder="Email")
+						textarea(placeholder="Сообщение")
+						input.btn.btn--blue.btn-submit(type="submit" value="Отправить")
+
+
+
+
+
 
 
 
