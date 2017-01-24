@@ -744,7 +744,7 @@ a img.aligncenter {
 		top: 6px;
 		left: 15px;
 	}
-	li.active > .submenu-arr {
+	li.active > .submenu-arr-wrap .submenu-arr {
 		@include sprite($submenu-arr-o);
 	}
 }
