@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,500&amp;amp;subset=cyrillic"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Document</title>
+  </head>
+  <body class="contacts">
+    <div class="all-wrapper">
+      <header class="site-header">
+        <div class="container cf"><a href="#" class="site-header__logo"><img src="img/logo.png" alt=""/></a>
+          <ul class="main-menu">
+            <li class="current-menu-item"><a href="#">О КОМПАНИИ</a></li>
+            <li><a href="#">ЮРИДИЧЕСКАЯ ПОМОЩЬ </a></li>
+            <li><a href="#">ИНФОУСЛУГИ</a></li>
+            <li><a href="#">ЦЕНЫ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+          </ul><a href="tel:89163818282" class="site-header__tel">8 (916) 381-82-82</a>
+        </div>
+      </header>
+      <main class="main-content">
+        <div style="background-image: url(img/contacts-bg.jpg)" class="page-heading cf">
+          <div class="container">
+            <h5>Контакты</h5>
+            <ul class="contacts__top">
+              <li class="tel"><a href="tel:8 (916) 381-82-82">8 (916) 381-82-82</a></li>
+              <li class="email"><a href="mailto:mail@mail.com">mail@mail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-wrapper">
+          <div class="container">
+            <div class="page__inner">
+              <div class="page-content">
+                <h1 class="page-title">Обратная связь</h1>
+                <p>Оставьте заявку, наши специалисты свяжутся с вами в ближайшее время</p>
+                <div class="contacts__form-wrapper">
+                  <form>
+                    <div class="contacts__form">
+                      <div class="contacts__form-col inputs-col">
+                        <input type="text" name="name" placeholder="Имя" class="contacts__form-input"/>
+                        <input type="tel" name="tel" placeholder="Телефон" class="contacts__form-input"/>
+                        <input type="email" name="email" placeholder="Email" class="contacts__form-input"/>
+                      </div>
+                      <div class="contacts__form-col textarea-col">
+                        <textarea placeholder="Сообщение" name="message" class="contacts__form-input"></textarea>
+                      </div>
+                    </div>
+                    <div class="form__send">
+                      <input type="submit" value="ОТПРАВИТЬ" class="btn btn--blue send-btn"/>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer">
+      <div class="container cf">
+        <div class="copyright">© 2016 Юридическое агентство «Юридические и информационные решения». Все права защищены.</div>
+        <div class="made-in">Разработка сайта: <a href="https://belugalab.ru/" target="_blank">Beluga Labs</a></div>
+      </div>
+    </footer>
+    <div id="order-service" class="zoom-anim-dialog mfp-hide popup">
+      <div class="sidebar__form">
+        <form>
+          <p class="heading">Заказать звонок</p>
+          <input type="text" placeholder="Имя" class="text-inp"/>
+          <input type="tel" placeholder="Телефон" class="text-inp"/>
+          <input type="email" placeholder="Email" class="text-inp"/>
+          <input type="submit" value="ОТПРАВИТЬ" class="btn btn--white-to send-btn"/>
+        </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/lib/lib.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

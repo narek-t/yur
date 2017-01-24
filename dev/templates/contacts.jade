@@ -1,0 +1,37 @@
+extends _layout
+block vars
+	- var bodyClass = 'contacts'
+block content
+	main.main-content
+		.page-heading.cf(style="background-image: url(img/contacts-bg.jpg)")
+			.container
+				h5 Контакты
+				ul.contacts__top
+					li.tel
+						a(href="tel:8 (916) 381-82-82") 8 (916) 381-82-82
+					li.email
+						a(href="mailto:mail@mail.com") mail@mail.com
+		.page-wrapper
+			.container
+				.page__inner
+					.page-content
+						h1.page-title Обратная связь
+						p Оставьте заявку, наши специалисты свяжутся с вами в ближайшее время
+						.contacts__form-wrapper
+							form
+								.contacts__form
+									.contacts__form-col.inputs-col
+										input.contacts__form-input(type="text" name="name" placeholder="Имя")
+										input.contacts__form-input(type="tel" name="tel" placeholder="Телефон")
+										input.contacts__form-input(type="email" name="email" placeholder="Email")
+									.contacts__form-col.textarea-col
+										textarea.contacts__form-input(placeholder="Сообщение" name="message")
+								.form__send
+									input.btn.btn--blue.send-btn(type="submit" value="ОТПРАВИТЬ")
+
+
+
+
+
+
+block inlineScripts

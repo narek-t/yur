@@ -38,6 +38,11 @@ $transition: all .3s ease-in-out;
 .btn--white {
 	border-color: #fff;
 	color: #fff;
+	background-color: transparent;
+	&:hover {
+		border-color: #7dacc4;
+		background: #7dacc4;;
+	}
 }
 
 .btn--blue {
@@ -57,4 +62,49 @@ $transition: all .3s ease-in-out;
 		background: #7dacc4;
 		color: #fff;
 	}
+}
+
+.btn--white-to {
+	border-color: #fff;
+	color: #fff;
+	background-color: transparent;
+	&:hover {
+		background: #fff;
+		color: #7dacc4;
+	}
+}
+
+.send-btn {
+	cursor: pointer;
+}
+
+//sticky-footer
+html, body {
+	height: 100%;
+}
+.all-wrapper {
+	min-height: 100%;
+	margin-bottom: -43px;
+}
+.all-wrapper:after {
+  content: "";
+  display: block;
+}
+.site-footer, .all-wrapper:after {
+	height: 43px;
+}
+
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder { /* WebKit browsers */
+      color: $color;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: $color;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: $color;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: $color;
+  }
 }

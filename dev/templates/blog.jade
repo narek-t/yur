@@ -1,0 +1,97 @@
+extends _layout
+block vars
+	- var bodyClass = 'blog'
+block content
+	main.main-content
+		.page-heading.cf(style="background-image: url(img/blog-bg.jpg)")
+			.container
+				h5 ЮРИДИЧЕСКИЙ БЛОГ
+		.page-wrapper
+			.container
+				.page__inner.has-sidebar
+					.page-content
+						ul.blog__list
+							li.blog__list-item.cf
+								.thumb-side
+									a(href="#")
+										img(src="img/blog-thumb.jpg", alt="")
+								.descr-side
+									a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+									p.short-descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									.date-side.cf
+										span.date 20.12.2016
+										a.view-more(href="#") Читать далее
+							li.blog__list-item.cf
+								.thumb-side
+									a(href="#")
+										img(src="img/blog-thumb.jpg", alt="")
+								.descr-side
+									a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+									p.short-descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									.date-side.cf
+										span.date 20.12.2016
+										a.view-more(href="#") Читать далее 
+							li.blog__list-item.cf
+								.thumb-side
+									a(href="#")
+										img(src="img/blog-thumb.jpg", alt="")
+								.descr-side
+									a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+									p.short-descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									.date-side.cf
+										span.date 20.12.2016
+										a.view-more(href="#") Читать далее 
+							li.blog__list-item.cf
+								.thumb-side
+									a(href="#")
+										img(src="img/blog-thumb.jpg", alt="")
+								.descr-side
+									a.heading(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+									p.short-descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									.date-side.cf
+										span.date 20.12.2016
+										a.view-more(href="#") Читать далее
+
+
+					aside.page-sidebar
+						.blog__sidebar
+							p.blog__sidebar-title Категории
+							ul
+								li
+									a(href="#") Категория 1 – lorem ipsum dolor sit
+								li
+									a(href="#") Категория 2 – consectetur adipiscing elit
+								li
+									a(href="#") Категория 3 – sed do eiusmod
+								li
+									a(href="#") Категория 4 – tempor incididunt ut labore 
+								li
+									a(href="#") Категория 5 – et dolore magna
+								li
+									a(href="#") Категория 6 – aute irure dolor in reprehenderit
+								li
+									a(href="#") Категория 7 – voluptate velit esse cillum 
+							p.blog__sidebar-title Архив статей
+							ul
+								li
+									a(href="#") 2016 год
+								li
+									a(href="#") 2015 год
+								li
+									a(href="#") 2014 год
+						.sidebar__form
+							form
+								p.heading Заказать звонок
+								input.text-inp(type="text" placeholder="Имя")
+								input.text-inp(type="tel" placeholder="Телефон")
+								input.text-inp(type="email" placeholder="Email")
+								input.btn.btn--white-to.send-btn(type="submit" value="ОТПРАВИТЬ")
+
+
+
+
+
+
+
+
+block inlineScripts

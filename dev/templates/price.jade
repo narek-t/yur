@@ -1,0 +1,121 @@
+extends _layout
+block vars
+	- var bodyClass = 'price'
+block content
+	main.main-content
+		.page-heading.cf(style="background-image: url(img/price-bg.jpg)")
+			.container
+				h5 Цены
+		.page-wrapper
+			.container
+				.page__inner.has-sidebar
+					.page-content
+						h1.page-title Цены
+						table.price-table
+							tr
+								td Устная консультация по телефону
+								td БЕСПЛАТНО
+							tr
+								td Составление документов
+									span Заявления, исковые заявления,  претензии, акты, протоколы, соглашения, расписки, ходатайства, запросы, отзывы, возражения, жалобы, аппеляционные и кассационные жалобы, 
+								td от 3000 руб.
+
+							tr
+								td Сопровождение в суде
+								td от 60 000 руб.
+							tr
+								td Правовая  экспертиза договоров
+								td от 60 000 руб.
+							tr
+								td Проверка юридической частоты сделки 
+								td от 150 000 руб.
+							tr
+								td Сопровождение сделок с недвижимостью
+								td от 300 000 руб.
+							tr
+								td Инф услуги
+									span Иные доп услуги оплачиваютя отдельно
+								td 15 000 руб.
+					aside.page-sidebar
+						.sidebar__nav
+							ul.sidebar__menu
+								li.menu-item-has-children
+									a(href="#") Юридическая помощь
+									ul.sub-menu
+										li.menu-item-has-children
+											a(href="#") Уголовное право и уголовно-судебное судопроизводство
+											ul.sub-menu
+												li
+													a(href="#") Юрист в области управления проблемными активами
+												li
+													a(href="#") Административная практика и судопроизводство
+												li
+													a(href="#") Семейные споры
+												li
+													a(href="#") Наследственные дела
+												li
+													a(href="#") Земельные споры
+										li
+											a(href="#") Гражданское право и судопроизводство
+										li
+											a(href="#") Арбитражные и налоговые споры, банкротство
+										li
+											a(href="#") Исполнительное производство
+										li
+											a(href="#") Юрист в области управления проблемными активами
+										li
+											a(href="#") Административная практика и судопроизводство
+										li
+											a(href="#") Семейные споры
+										li
+											a(href="#") Наследственные дела
+										li
+											a(href="#") Земельные споры
+								li.menu-item-has-children
+									a(href="#") ИНФормационные УСЛУГИ
+									ul.sub-menu
+										li.menu-item-has-children
+											a(href="#") Уголовное право и уголовно-судебное судопроизводство
+											ul.sub-menu
+												li
+													a(href="#") Юрист в области управления проблемными активами
+												li
+													a(href="#") Административная практика и судопроизводство
+												li
+													a(href="#") Семейные споры
+												li
+													a(href="#") Наследственные дела
+												li
+													a(href="#") Земельные споры
+										li
+											a(href="#") Гражданское право и судопроизводство
+										li
+											a(href="#") Арбитражные и налоговые споры, банкротство
+										li
+											a(href="#") Исполнительное производство
+										li
+											a(href="#") Юрист в области управления проблемными активами
+										li
+											a(href="#") Административная практика и судопроизводство
+										li
+											a(href="#") Семейные споры
+										li
+											a(href="#") Наследственные дела
+										li
+											a(href="#") Земельные споры
+						.sidebar__form
+							form
+								p.heading Заказать звонок
+								input.text-inp(type="text" placeholder="Имя")
+								input.text-inp(type="tel" placeholder="Телефон")
+								input.text-inp(type="email" placeholder="Email")
+								input.btn.btn--white-to.send-btn(type="submit" value="ОТПРАВИТЬ")
+
+
+
+
+
+
+
+
+block inlineScripts
